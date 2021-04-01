@@ -10,22 +10,26 @@ namespace LatihanOverloadingMethod
     {
         public int FindMinimum(int number1, int number2)
         {
-            // TODO: lengkapi kode methodnya
+            if (number1 < number2) return number1; else return number2;
         }
 
         public int FindMinimum(int number1, int number2, float number3)
         {
-            // TODO: lengkapi kode methodnya
+            if (number1 < number2) return number1;
+            if (number2 < number3) return number2;
+            else return (int)(float)number3;
         }
 
         public int FindMaximum(int number1, int number2)
         {
-            // TODO: lengkapi kode methodnya
+            if (number1 > number2) return number1; else return number2;
         }
 
         public int FindMaximum(int number1, int number2, float number3)
         {
-            // TODO: lengkapi kode methodnya
+            if (number1 > number2) return number1;
+            if (number2 > number3) return number2;
+            else return (int)(float)number3;
         }
     }
 }
